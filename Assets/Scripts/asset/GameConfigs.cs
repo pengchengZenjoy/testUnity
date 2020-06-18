@@ -21,7 +21,7 @@ public static class GameConfigs
 
 
     //资源服务器url
-    public static string ResServerUrl = "http://127.0.0.1/ResServer";
+    public static string ResServerUrl = "http://127.0.0.1:8888/ResServer";
 
 
     //(该文件夹只能读,打包时被一起写入包内,第一次运行游戏把该文件夹数据拷贝到本地ab包路径下) 
@@ -55,7 +55,7 @@ public static class GameConfigs
     //public static string TmpPath = Application.temporaryCachePath + "/Cache/" + curPlatformName;
 
     //服务器版本号url
-    public static string ServerVersionUrl = "http://127.0.0.1/ResServer/version.txt";
+    public static string ServerVersionUrl = "http://127.0.0.1:8888/ResServer/version.txt";
 
 
 
@@ -71,7 +71,7 @@ public static class GameConfigs
             if (LoadAssetMode == AssetLoadMode.Editor) { 
                 return GameResPath;
             } else {
-                return StreamingAssetABRootPath;
+                return LocalABRootPath;
             }
         }
     }

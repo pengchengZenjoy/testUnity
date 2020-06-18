@@ -26,7 +26,7 @@ public class AssetManager : MonoSingleton<AssetManager>{
 		ClearCacheDuration = duration;
 		CacheDataStayTime = cacheStayTime;
 		editorLoader = new EditorAssetLoader();
-		abLoader = new AssetBundleLoader(GameConfigs.StreamingAssetABRootPath, GameConfigs.StreamingAssetManifestPath);
+		abLoader = new AssetBundleLoader(GameConfigs.LocalABRootPath, GameConfigs.LocalManifestPath);
 	}
  
 	//同步加载

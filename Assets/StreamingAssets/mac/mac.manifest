@@ -1,7 +1,0 @@
-ManifestFileVersion: 0
-CRC: 2692249668
-AssetBundleManifest:
-  AssetBundleInfos:
-    Info_0:
-      Name: textures/button_green
-      Dependencies: {}

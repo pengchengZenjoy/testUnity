@@ -16,6 +16,7 @@ public class UpdateAssetManager:MonoSingleton<UpdateAssetManager>
 
     public void CheckAsset(UnityAction onComplete =null) {
         MsgDispatcher.GetInstance().Fire(GameEvents.Msg_ShowLoadingContent, "检测资源...");
+        Debug.Log("GameConfigs.LocalABRootPath:" + GameConfigs.LocalABRootPath);
         StartCoroutine(progress(onComplete));
     }
 
