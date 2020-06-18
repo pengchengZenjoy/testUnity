@@ -7,6 +7,8 @@ public class LoginPanel : PanelBase
 
     private Button closeBtn;
 
+    private Image testImg;
+
     #region 生命周期
     public override void Init(params object[] args)
     {
@@ -22,11 +24,17 @@ public class LoginPanel : PanelBase
         closeBtn = skinTrans.Find("CloseBtn").GetComponent<Button>();
 
         closeBtn.onClick.AddListener(OnCloseClick);
+
+        testImg = skinTrans.Find("TestImage").GetComponent<Image>();
+
+        AssetManager.Instance.InitMode(GameConfigs.LoadAssetMode);
     }
     #endregion
 
     public void OnCloseClick()
     {
-        Close();
+        //Close();
+        Sprite sp = AssetManager.Instance.LoadAsset<Sprite>(GameConfigs.GetSpritePath("button_green"));
+        testImg.sprite = sp;
     }
 }

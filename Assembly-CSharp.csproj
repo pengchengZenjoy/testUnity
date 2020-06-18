@@ -69,7 +69,11 @@
      <Compile Include="Assets\Scripts\common\PanelBase.cs" />
      <Compile Include="Assets\Scripts\common\PanelMgr.cs" />
      <Compile Include="Assets\Scripts\manager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\MsgDispatcher\IMsgReceiver.cs" />
+     <Compile Include="Assets\Scripts\MsgDispatcher\MsgDispatcher.cs" />
      <Compile Include="Assets\Scripts\ui\LoginPanel.cs" />
+     <Compile Include="Assets\Scripts\UpdateManager\UpdateAssetManager.cs" />
+     <Compile Include="Assets\Scripts\UpdateManager\UpdateVersionManager.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/cheng.peng/workSpace/dev2/testUnity/testUnity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
