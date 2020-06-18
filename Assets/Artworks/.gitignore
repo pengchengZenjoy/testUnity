@@ -1,0 +1,9 @@
+.DS_Store
+Resources/DOTweenSettings.asset
+Resources/DOTweenSettings.asset.meta
+Demigiant.meta
+Demigiant
+Resources/Prefabs/map/level_anchor_maker.prefab
+Resources/Prefabs/map/level_anchor_maker.prefab.meta
+Scripts/MyEditTool.cs
+Scripts/MyEditTool.cs.meta
